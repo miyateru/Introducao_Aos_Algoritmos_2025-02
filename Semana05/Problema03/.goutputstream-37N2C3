@@ -1,0 +1,26 @@
+//IAlg - Semana 05 - Problema 03
+#include <cmath>
+#include <fstream>
+//Testes
+#include <iostream>
+
+using namespace std;
+
+int main() {
+	int i = 0, num = 0, numMersenne = 0;
+	
+	ifstream entrada("senha.txt");
+	
+	if (entrada) {
+		entrada >> num;
+		while ((numMersenne = pow(2, i) - 1) < num) {
+			if (numMersenne < num) {
+				i++;
+			}
+		}
+	}
+	
+	entrada.close();
+	
+	return 0;
+}
