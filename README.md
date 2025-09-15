@@ -8,5 +8,5 @@ Curso de Ciência da Computação, 2025/02.
 - Exercicios das listas de estudos separados por semanas.
 - Provas nao estao incluidas.
 - Testes de mesa nao estao inclusos.
-- Commits julgados como sem necessidade de assinatura (sem sha ou hash, uso sem garantias)
+- Commits julgados como sem necessidade de assinatura, uso sem garantias.
 - Licensa Apache 2.0
