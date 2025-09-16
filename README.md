@@ -1,12 +1,14 @@
-# Repositorio para materia de Introducao aos Algoritmos (IAlg)
-Repositorio para codigos associados com a disciplina de introdução aos algoritmos.
-Aplicada pela Universidade Federal de Lavras (UFLA).
-Curso de Ciencia da Computação, 2025/02.  
+# Repositório para matéria de Introdução aos Algoritmos (IAlg)
+
+Repositório para códigos associados com a disciplina de Introdução aos Algoritmos (IAlg).
+Aplicada pela Universidade Federal de Lavras (UFLA), curso GAC-124.
+Curso de Ciência da Computação, 2025/02.
 
 ## Detalhes
 
-- Exercicios das listas de estudos separados por semanas.
-- Provas nao estao incluidas.
-- Testes de mesa nao estao inclusos.
+- Exercícios em c++ (17).
+- Exercícios das listas de estudos separados por semanas.
+- Provas não estão incluídas.
+- Testes de mesa não estão inclusos.
 - Commits julgados como sem necessidade de assinatura, uso sem garantias.
-- Licensa Apache 2.0
+- Licença Apache 2.0
