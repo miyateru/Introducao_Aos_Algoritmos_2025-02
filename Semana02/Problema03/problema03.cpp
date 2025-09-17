@@ -4,8 +4,10 @@
 using namespace std;
 
 int main() {
-	int numero;
-	cin >> numero;
-	cout << numero/3;
-	return 0;
+    int numero = 0;
+
+    cin >> numero;
+    cout << (numero / 3) << endl;
+
+    return 0;
 }

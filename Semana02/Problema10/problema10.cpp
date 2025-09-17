@@ -6,18 +6,17 @@
 using namespace std;
 
 int main() {
-	int dias;
-	float valorLiquido;
-	
-	ifstream arquivoEntra ("entrada");
-	arquivoEntra >> dias;
-	
-	valorLiquido = (dias*60*0.92);
-	ofstream arquivoSaida ("saida");
-	arquivoSaida << "R$ " << valorLiquido;
-	
-	arquivoEntra.close();
-	arquivoSaida.close();
-	
-	return 0;
+    int dias = 0;
+    float valorLiquido = 0.0;
+
+    ifstream arquivoEntra ("entrada");
+    arquivoEntra >> dias;
+    valorLiquido = (dias * 60 * 0.92);
+    arquivoEntra.close();
+
+    ofstream arquivoSaida ("saida");
+    arquivoSaida << "R$ " << valorLiquido;
+    arquivoSaida.close();
+
+    return 0;
 }

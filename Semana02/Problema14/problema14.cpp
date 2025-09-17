@@ -5,14 +5,13 @@
 
 using namespace std;
 
-int main ()
-{
-    float base,altura,area;
+int main () {
+    float base = 0.0, altura = 0.0, area = 0.0;
     ifstream entrada ("triangulo.txt");
     ofstream saida ("saida.txt");
     
     entrada >> base >> altura;
-	area = base*altura/2;
+	area = base * altura / 2;
     saida << area;
     
     entrada.close();

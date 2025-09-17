@@ -7,17 +7,17 @@
 using namespace std;
 
 int main() {
-	double entrada;
-	ofstream saida ("saida.txt");
-	
-	cin >> entrada;
-	saida << setprecision(8);
-	saida << trunc(entrada) << endl;
-	saida << entrada - trunc(entrada) << endl;
-	saida << floor(entrada) << endl;
-	saida << ceil(entrada) << endl;
-	saida << round(entrada) << endl;
-	
-	saida.close();
-	return 0;
+    double entrada = 0.0;
+    ofstream saida ("saida.txt");
+
+    cin >> entrada;
+    saida << setprecision(8);
+    saida << trunc(entrada) << endl;
+    saida << entrada - trunc(entrada) << endl;
+    saida << floor(entrada) << endl;
+    saida << ceil(entrada) << endl;
+    saida << round(entrada) << endl;
+
+    saida.close();
+    return 0;
 }

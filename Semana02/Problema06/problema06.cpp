@@ -4,9 +4,11 @@
 using namespace std;
 
 int main() {
-    int milhas, km;
+    int milhas = 0, km = 0;
+
     cin >> km;
     milhas = km / 1.6;
-    cout << milhas;
+    cout << milhas << endl;
+
     return 0;
 }

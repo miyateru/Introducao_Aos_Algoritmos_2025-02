@@ -4,13 +4,11 @@
 using namespace std;
 
 int main() {
-    float largura;
-    float altura;
-    
-	cin >> largura;
-	cin >> altura;
-	cout << largura*altura;
-    
-	return 0;
-}
+    float altura = 0.0, largura = 0.0;
 
+    cin >> largura;
+    cin >> altura;
+    cout << (largura * altura) << endl;
+
+    return 0;
+}
