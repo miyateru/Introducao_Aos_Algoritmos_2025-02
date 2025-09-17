@@ -4,15 +4,15 @@
 
 using namespace std;
 
-int main(){
-	float cmDegrau, mAltura;
-	
-	ifstream entrada("entrada.txt");
-	entrada >> cmDegrau >> mAltura;
-	entrada.close();
-	ofstream saida("degraus.txt");
-	saida << ceil((mAltura*100)/cmDegrau) << endl;
-	saida.close();
-	
-	return 0;
+int main() {
+    float cmDegrau = 0.0, mAltura = 0.0;
+
+    ifstream entrada("entrada.txt");
+    entrada >> cmDegrau >> mAltura;
+    entrada.close();
+    ofstream saida("degraus.txt");
+    saida << ceil((mAltura * 100) / cmDegrau) << endl;
+    saida.close();
+
+    return 0;
 }

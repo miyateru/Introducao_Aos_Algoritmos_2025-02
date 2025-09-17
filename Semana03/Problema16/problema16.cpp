@@ -4,19 +4,19 @@
 
 using namespace std;
 
-int main(){
-	float valorProduto;
-	
-	ifstream entrada("valor.txt");
-	entrada >> valorProduto;
-	entrada.close();
-	
-	ofstream opcoes("opcoes.txt");
-	opcoes << fixed << setprecision(2);
-	opcoes << valorProduto*0.92 << endl;
-	opcoes << valorProduto/4 << endl;
-	opcoes <<( valorProduto*1.1)/10 << endl;
-	opcoes.close();
-	
-	return 0;
+int main() {
+    float valorProduto = 0.0;
+
+    ifstream entrada("valor.txt");
+    entrada >> valorProduto;
+    entrada.close();
+
+    ofstream opcoes("opcoes.txt");
+    opcoes << fixed << setprecision(2);
+    opcoes << (valorProduto * 0.92) << endl;
+    opcoes << (valorProduto / 4) << endl;
+    opcoes << ((valorProduto * 1.1) / 10) << endl;
+    opcoes.close();
+
+    return 0;
 }

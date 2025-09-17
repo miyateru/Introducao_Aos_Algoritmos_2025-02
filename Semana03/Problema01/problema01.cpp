@@ -5,14 +5,15 @@
 
 using namespace std;
 
-int main(){
-	string nomeArquivo, conteudo;
-	
-	cin >> nomeArquivo;
-	ifstream arquivo (nomeArquivo);
-	arquivo >> conteudo;
-	cout << conteudo;
-	
-	arquivo.close();
-	return 0;
+int main() {
+    string nomeArquivo = " ", conteudo = " ";
+
+    cin >> nomeArquivo;
+
+    ifstream arquivo (nomeArquivo);
+    arquivo >> conteudo;
+    cout << conteudo << endl;
+    arquivo.close();
+
+    return 0;
 }

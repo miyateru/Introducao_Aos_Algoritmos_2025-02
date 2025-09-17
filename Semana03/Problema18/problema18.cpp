@@ -4,19 +4,19 @@
 
 using namespace std;
 
-int main(){
-	int numEntr, numP1, numP2, numP3;
-	
-	ifstream chaves("chaves.txt");
-	chaves >> numP1 >> numP2 >> numP3;
-	chaves.close();
-	cin >> numEntr;
-	
-	ofstream codigo("codigo.txt");
-	codigo << numEntr % numP1 << endl;
-	codigo << numEntr % numP2 << endl;
-	codigo << numEntr % numP3 << endl;
-	codigo.close();
-	
-	return 0;
+int main() {
+    int numEntr = 0, numP1 = 0, numP2 = 0, numP3 = 0;
+
+    ifstream chaves("chaves.txt");
+    chaves >> numP1 >> numP2 >> numP3;
+    chaves.close();
+    cin >> numEntr;
+
+    ofstream codigo("codigo.txt");
+    codigo << (numEntr % numP1) << endl;
+    codigo << (numEntr % numP2) << endl;
+    codigo << (numEntr % numP3) << endl;
+    codigo.close();
+
+    return 0;
 }
