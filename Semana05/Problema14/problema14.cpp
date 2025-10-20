@@ -1,37 +1,48 @@
 //IAlg - Semana 05 - Problema 14
-#include <iostream>
 #include <fstream>
+#include <iostream>
 #include <string>
 
 using namespace std;
 
 int main() {
-    int cPalavras = 0;  
-    string codigo = "", nomeArquivo = "", palavraAnte = "", palavra = "";
-    
+    int contador = 0;
+    string palavra = "", palavraAnterior = "";
+    string nomeArquivo = "";
+
     cin >> nomeArquivo;
-    
+
     ifstream entrada(nomeArquivo);
-    
+
+    entrada.seekg(0, ios::end);
+    int bytes = entrada.tellg();
+    entrada.seekg(0, ios::beg);
+
+    if (!bytes) {
+        cout << 0 << endl;
+        return 0;
+    }
+
     if (entrada) {
-        entrada >> palavraAnte;
-        while (entrada >> palavra) {
-            if (palavra == palavraAnte) {
-                codigo.push_back((char) cPalavras);
-                cPalavras = 0;
+        entrada >> palavraAnterior;
+
+        while (entrada >> palavra) {    
+            if (palavra != palavraAnterior) {
+                contador++;
             }
-            else {
-                cPalavras++;
+
+            else if (palavra == palavraAnterior) {
+                cout << contador;
+                contador = -1;
             }
-            palavraAnte = palavra;
+            
+            palavraAnterior = palavra;
         }
-        
-        cout << codigo << endl;
-    }
-    else {
-        cout << "Arquivo não encontrado: " << nomeArquivo << endl;
+
+    cout << (contador + 1) << endl;
+
+    entrada.close();
     }
     
-    entrada.close();
     return 0;
 }
