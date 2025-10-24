@@ -1,3 +1,4 @@
+//IAlg - Semana 06 - Problema 06
 #include <iostream>
 
 using namespace std;
