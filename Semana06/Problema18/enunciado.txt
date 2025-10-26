@@ -1,0 +1,11 @@
+Desenho do Triângulo Decorado
+
+Desenvolva um programa que desenhe um triângulo utilizando os caracteres @ e #. O algoritmo deverá solicitar que o usuário digite um número que deverá ser utilizado para definir a altura e a largura do triângulo. Os caracteres deverão ser alternados de maneira que todas as linhas do desenho sejam iniciadas pelo caractere @. A impressão deverá ser realizada por um procedimento auxiliar que recebe o número para a altura e largura do triângulo. Esse número deverá ser recebido pela função principal (main()) do programa.
+
+Entradas:
+
+    Número inteiro que indica a altura e a largura do triângulo.
+
+Saídas:
+
+    Um conjunto de caracteres @ e # no formato de um triângulo.

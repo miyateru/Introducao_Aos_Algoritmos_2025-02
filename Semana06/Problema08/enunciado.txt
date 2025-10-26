@@ -1,0 +1,33 @@
+// Cor dos olhos do bebê
+
+Durante a gravidez, é inevitável que muitos casais possuem muitas dúvidas e inclusive curiosidades a respeito do bebê. Em uma clínica médica, a pergunta sobre qual a probabilidade do bebê nascer com olhos claros é bastante recorrente, porém nem sempre há alguém disponível no momento para responder. Para ajudar a clínica a esclarecer esta dúvida de maneira mais eficiente para seus clientes, faça um subprograma que calcule a probabilidade do filho nascer com olhos verdes ou azuis, com base somente na cor dos olhos dos pais, desconsiderando os avós.
+
+Para lhe auxiliar, utilize como base a tabela abaixo. Considere como entradas válidas as cores “Marrom”, “Azul” e “Verde” para os pais, mas somente as cores “Azul” e “Verde” para o filho. Caso uma das cores seja inválida, imprima a palavra “ERRO”, tudo em maiúsculo. O subprograma deverá ter como entrada as cores do pai, da mãe e a cor desejada para o filho na mesma linha. Deverá ter como saída uma String, indicando a porcentagem de chances do filho nascer com aquela cor dos olhos.
+
+Pai 	Mãe 	Filho Verde 	Filho Azul
+Marrom	Marrom	8.33% 	2.78%
+Marrom	Verde	27.78%	5.56%
+Marrom	Azul	16.67%	16.67%
+Verde	Marrom	27.78%	5.56%
+Verde	Verde	88.64%	10.86%
+Verde	Azul	66.42%	33.08%
+Azul	Marrom	16.67%	16.67%
+Azul	Verde	66.42%	33.08%
+Azul	Azul	0.50%	99%
+
+Entradas:
+
+    Strings correspondentes às cores dos olhos do pai, da mãe e cor desejada do filho, respectivamente na mesma linha. A entrada de cada String deve possuir inicial maiúscula e o restante minúsculo.
+
+Saída:
+
+    String correspondente a probabilidade do filho nascer com a cor de olhos escolhida.
+
+Exemplo de Entrada:
+
+Marrom Marrom Verde
+
+Exemplo de Saída:
+
+8.33%
+

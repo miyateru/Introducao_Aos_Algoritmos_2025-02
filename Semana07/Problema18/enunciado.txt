@@ -1,0 +1,35 @@
+Maior e Menor (tamanho fixo)
+
+Faça um programa que leia um vetor de 10 números inteiros, encontre e escreva o maior e o menor elemento e suas respectivas posições. No caso do maior ou menor elemento aparecerem mais de uma vez no vetor, informe a primeira ocorrência
+
+Entradas:
+
+    cada elemento do vetor
+
+Saídas:
+
+    o maior valor do vetor
+    o índice do maior valor do vetor
+    o menor valor do vetor
+    o índice do menor valor do vetor
+
+É obrigatório que a leitura de todos os elementos do vetor seja feita antes do processamento dos elementos do vetor.
+
+Exemplo de entrada:
+
+1 2 5 7 3 0 99 9 -2 11
+
+Exemplo de saída:
+
+99 6
+-2 8
+
+Exemplo de entrada:
+
+1 2 5 3 2 1 0 4 5 0
+
+Exemplo de saída:
+
+5 2
+0 6
+

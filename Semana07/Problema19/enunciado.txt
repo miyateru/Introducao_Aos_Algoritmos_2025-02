@@ -1,0 +1,20 @@
+Produto Escalar (tamanho fixo)
+
+Dados dois vetores x e y, ambos com 5 elementos, determinar o produto escalar desses vetores.
+
+Para calcular o produto escalar utilize a seguinte fórmula:
+A ⋅ B = ∑ i = 1 n a i b i = a 1 b 1 + a 2 b 2 + ⋯ + a n b n
+
+
+Entrada:
+A primeira linha será os 5 valores de cada posição do primeiro vetor. A segunda linha será os 5 valores de cada posição do segundo vetor.
+
+Exemplo de entrada:
+2.2 3.5 1 2.8 1.6
+1.2 6.5 3 2 1.65
+
+Saída:
+A saída dever ser composta de apenas uma linha contendo o valor do produto escalar.
+
+Exemplo de saída:
+36.63

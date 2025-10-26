@@ -1,0 +1,43 @@
+Controle de preços (tamanho fixo)
+
+Faça um programa que receba o preço de 15 produtos a partir de um arquivo valores.txt em um vetor V. Em seguida, o programa receberá um valor inteiro M (M <= N) e uma sequência de M números inteiros, que correspondem aos índices do vetor V (ou seja, os valores da sequência variam entre 0 e N-1). Além disso, também receberá um multiplicador para atualizar o preços nessas posições. O programa deverá multiplicar por esse multiplicador os valores do vetor V correspondentes aos índices lidos na sequência.
+
+Entrada:
+
+    15 números reais a serem colocados em um vetor no arquivo valores.txt);
+    Valor inteiro M (M<=N);
+    Sequência de M números inteiros (valores entre 0 e N-1), posições do vetor;
+    Valor do reajuste.
+
+Saída:
+
+    Vetor V com os valores alterados.
+
+Exemplo de entrada (arquivo valores.txt):
+
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+
+Exemplo de entrada (entrada padrão):
+
+4
+0 1 2 5
+1.5
+
+Exemplo de saída:
+
+1.5 3 4.5 4 5 9 7 8 9 10 11 12 13 14 15
+
+Exemplo de entrada (arquivo valores.txt):
+
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+
+Exemplo de entrada (entrada padrão):
+
+7
+1 3 5 7 9 11 13
+0.5
+
+Exemplo de saída:
+
+1 1 3 2 5 3 7 4 9 5 11 6 13 7 15 
+
