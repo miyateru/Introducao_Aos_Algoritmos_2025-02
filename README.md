@@ -7,6 +7,7 @@ Curso de Ciência da Computação, 2025/02.
 ## Detalhes
 
 - Exercícios em c++ (17).
+- Flags de compilação usuais: ```g++ --std=c++17 -Wall -O3```
 - Exercícios das listas de estudos separados por semanas.
 - Provas não estão incluídas.
 - Testes de mesa não estão inclusos.
