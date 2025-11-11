@@ -1,62 +1,37 @@
-//IAlg - Semana 07 - Problema 02
+// IAlg - Semana 07 - Problema 02
 #include <iostream>
-#include <vector>
 
 using namespace std;
 
-void reduzirVetor(int* vetor, int tamVetor) {
+void lerVetor(int *vetor, int tamVetor) {
     for (int i = 0; i < tamVetor; i++) {
-        if (vetor[i] > 0) {
-            vetor[i]--;
-        }
+        cin >> vetor[i];
     }
+    
     return;
 }
 
 int main() {
-    const int tamVetor = 3;
-    int vida[tamVetor] = {};
-    bool vivos[tamVetor] = {};
+    const int qInimigos = 10;
+    // lp -> Life points
+    int lpInimigos[qInimigos];
+    lerVetor(lpInimigos, qInimigos);
+
+    bool chainCast;
     int qDerrotados = 0;
+    do {
+        chainCast = false;
 
-    //Preenche vetores
-    for (int i = 0; i < tamVetor; i++) {
-        vivos[i] = true;
-    }
-    
-    for (int i = 0; i < tamVetor; i++) {
-        cin >> vida[i];
-    }
-
-    //Remove do calculo inimigos já mortos
-    for (int i = 0; i < tamVetor; i++) {
-        if ((vivos[i] == true) and (vida[i] == 0)) {
-            vivos[i] = false;
-        }
-    }
-
-    //Calcula a quantidade de inimigos mortos pelo chain cast
-    bool chain = true;
-    for (int n = 0; chain == true; n++) {
-        reduzirVetor(vida, tamVetor);
-
-        //Verifica se algum inimigo foi morto nessa instancia do chain cast
-        for (int i = 0; i < tamVetor; i++) {
-            if ((vivos[i] == true) and (vida[i] == 0)) {
+        for (int i = 0; i < qInimigos; i++) {
+            if (lpInimigos[i] > -1) {
+                lpInimigos[i]--;
+            }
+            if (lpInimigos[i] == 0) {
                 qDerrotados++;
-                vivos[i] = false;
+                chainCast = true;
             }
         }
-
-        //Se a quantidade de derrotados é menor entoa ninguem é derrotado
-        if (qDerrotados < n) {
-            chain = false;
-        }
-        //Se a quantidade de derrotados e maior varios foram derrotados
-        else if (qDerrotados > n) {
-            n = qDerrotados;
-        }
-    }
+    } while(chainCast);
 
     cout << qDerrotados << endl;
 
